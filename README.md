@@ -3,7 +3,9 @@
 
 ## INSTALL libav-tools
 
- <code>sudo apt-get install libav-tools</code>
+```shell
+sudo apt-get install libav-tools</code>
+```
 
 ## INSTALL FFMPEG
 
@@ -37,16 +39,22 @@ sudo make install
 
 ## INSTALL sox
 
- sudo apt install sox
- sudo apt-get install libsox-fmt-mp3
+```shell
+sudo apt install sox
+
+sudo apt-get install libsox-fmt-mp3
+```
 
 ## download mp3 sample and create loop
  //save the file (as example sample.mp3), create loop_sound.mp3 using sox
 
- sox sound.mp3 loop_sound.mp3 repeat 1000
+```shell
+sox sound.mp3 loop_sound.mp3 repeat 1000
+```
 
 ## RUN STREAM shell
 
- raspivid -rot 90 -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -i loop_sound.mp3  -re -ar 44100 -ac 2 -acodec pcm_s16le -f s16le -ac 2 -i /dev/zero -f h264 -i - -vcodec copy -acodec aac -ab 128k -g 50 -strict experimental -shortest -f flv rtmp://a.rtmp.youtube.com/live2/YOUR_KEY
-
+```shell
+raspivid -rot 90 -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -i loop_sound.mp3  -re -ar 44100 -ac 2 -acodec pcm_s16le -f s16le -ac 2 -i /dev/zero -f h264 -i - -vcodec copy -acodec aac -ab 128k -g 50 -strict experimental -shortest -f flv rtmp://a.rtmp.youtube.com/live2/YOUR_KEY
+```
 
