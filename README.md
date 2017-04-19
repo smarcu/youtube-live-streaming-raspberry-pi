@@ -1,5 +1,6 @@
 # Youtube Live Streaming setup for raspberry pi
 
+[http://teakdata.com/blog/youtube-live-streaming-device-using-raspberry-pi/](http://teakdata.com/blog/youtube-live-streaming-device-using-raspberry-pi/)
 
 ## INSTALL libav-tools
 
