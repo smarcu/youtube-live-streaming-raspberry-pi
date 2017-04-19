@@ -4,7 +4,7 @@
 ## INSTALL libav-tools
 
 ```shell
-sudo apt-get install libav-tools</code>
+sudo apt-get install libav-tools
 ```
 
 ## INSTALL FFMPEG
